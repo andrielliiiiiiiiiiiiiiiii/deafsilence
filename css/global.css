@@ -1,0 +1,22 @@
+body {
+    background-color: #c6d3da;
+
+    display: flex;
+    justify-content: center;
+}
+
+.container-principal{
+    background-color: #fff;
+    height: 100vh;
+    width: 90%;
+}
+
+p {
+    font-family: serif;
+    font-size: 26px;                                            
+}
+
+a{
+    color: #020458;
+    text-decoration: none;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        .produtos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .produto {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px;
+            width: 200px;
+            text-align: center;
+            background: #fff;
+        }
+        .produto img {
+            max-width: 100%;
+            height: auto;
+        }
+        .preco {
+            font-size: 1.2em;
+            color: #333;
+        }
+        .botao {
+            background-color: #020458;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .botao:hover {
+            background-color: #020458;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Obtenha seu Produto!</h1>
+    <div class="produtos">
+        <div class="produto">
+            <img src="produto1.jpg" alt="Produto 1">
+            <h2>Display inovador</h2>
+            <p class="preco">R$ 00,00</p>
+            <a href="#" class="botao">Iniciar Compra</a>
+        <!-- Adicione mais produtos conforme necessário -->
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .tab {
+            display: none;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 5px;
+        }
+        .tab-button {
+            background-color: #f1f1f1;
+            border: 1px solid #ccc;
+            padding: 10px;
+            cursor: pointer;
+            margin-right: 5px;
+        }
+        .active {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+<h2>informações</h2>
+
+<div>
+    <button class="tab-button" onclick="showTab('info1')">Sobre Nós</button>
+    <button class="tab-button" onclick="showTab('info2')">Sobre o Projeto</button>
+    <button class="tab-button" onclick="showTab('info3')">Como Usar</button>
+</div>
+
+<div id="info1" class="tab">
+    <h3>Sobre Nós</h3>
+    <p>Deaf silence surgiu com o objetivo de aumentar a segurança, o conforto e a autonomia de pessoas com deficiência auditiva no transito. Com o nosso display inovador, Deaf silence vem para mudar o mercado e quebrar barreiras.
+        Sua voz é nosso compromisso, Deaf silence número um em segurança e inclusão</p>
+</div>
+
+<div id="info2" class="tab">
+    <h3>Sobre o Projeto</h3>
+    <p>Esta é a descrição da segunda informação.</p>
+</div>
+
+<div id="info3" class="tab">
+    <h3>Como Usar</h3>
+    <p>Esta é a descrição da terceira informação.</p>
+</div>
+
+<script>
+    function showTab(tabId) {
+        // Esconder todas as abas
+        const tabs = document.querySelectorAll('.tab');
+        tabs.forEach(tab => tab.style.display = 'none');
+
+        // Remover a classe ativa de todos os botões
+        const buttons = document.querySelectorAll('.tab-button');
+        buttons.forEach(button => button.classList.remove('active'));
+
+        // Mostrar a aba correspondente
+        document.getElementById(tabId).style.display = 'block';
+
+        // Adicionar a classe ativa ao botão correspondente
+        event.target.classList.add('active');
+    }
+
+    // Mostrar a primeira aba por padrão
+    showTab('info1');
+</script>
+
+</body>
+</html>
